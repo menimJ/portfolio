@@ -151,10 +151,37 @@
 
     @media print{
       .toolbar{ display: none !important; }
+      body{
+        font-size: 12px;
+        line-height: 1.4;
+      }
       a{ color: #000; text-decoration: none; }
       .page{
         max-width: none;
         padding: 0;
+      }
+      .name{ font-size: 24px; }
+      .title{ font-size: 12.6px; }
+      .contact, .role-meta, .role-sub{ font-size: 11px; }
+      .role-title{ font-size: 12.2px; }
+      .section h2{ font-size: 12.2px; }
+
+      /* Let long sections flow naturally across pages */
+      .section, .role{
+        break-inside: auto;
+        page-break-inside: auto;
+      }
+      .section h2, .role-head, .subhead{
+        break-after: avoid-page;
+        page-break-after: avoid;
+      }
+      li{
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+      }
+      p, li{
+        orphans: 3;
+        widows: 3;
       }
     }
   </style>
