@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Samuel Eyo Menim - Senior Back-End Engineer</title>
+  <style>
+    :root{
+      --text:#111;
+      --muted:#555;
+      --line:#e6e6e6;
+      --bg:#fff;
+      --accent:#0b57d0;
+    }
+    @page { size: A4; margin: 16mm; }
+    body{
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      font-size: 12.2px;
+      line-height: 1.45;
+      margin: 0;
+      padding: 0;
+    }
+    .page{
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 18px 18px 26px;
+    }
+    .header{
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+    .name{
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      margin: 0;
+    }
+    .title{
+      margin: 4px 0 0;
+      font-size: 13.5px;
+      font-weight: 650;
+      color: var(--muted);
+    }
+    .contact{
+      text-align: right;
+      font-size: 11.7px;
+      color: var(--muted);
+      min-width: 240px;
+    }
+    .contact a{ color: var(--accent); text-decoration: none; }
+    .contact a:hover{ text-decoration: underline; }
+    .contact div{ margin: 2px 0; }
+
+    .section{
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+    .section:first-of-type{
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 10px;
+    }
+    .section h2{
+      font-size: 13px;
+      margin: 0 0 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+    }
+    .summary{ margin: 0; }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 18px;
+    }
+    .kv{ margin: 0; }
+    .k{ font-weight: 700; color: var(--text); }
+    .v{ color: var(--muted); }
+
+    .role{
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--line);
+    }
+    .role:first-child{
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+    .role-head{
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .role-title{
+      font-weight: 800;
+      font-size: 12.8px;
+      margin: 0;
+    }
+    .role-meta{
+      color: var(--muted);
+      font-size: 11.7px;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .role-sub{
+      margin: 2px 0 6px;
+      color: var(--muted);
+      font-size: 11.7px;
+    }
+    ul{
+      margin: 6px 0 0 18px;
+      padding: 0;
+    }
+    li{ margin: 3px 0; }
+    .subhead{
+      font-weight: 750;
+      margin: 8px 0 4px;
+    }
+    .links a{ color: var(--accent); text-decoration: none; }
+    .links a:hover{ text-decoration: underline; }
+    .section, .role{ break-inside: avoid; page-break-inside: avoid; }
+
+    @media print{
+      a{ color: #000; text-decoration: none; }
+      .page{ padding: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1 class="name">SAMUEL EYO MENIM</h1>
+        <p class="title">Senior Back-End Engineer (Fintech, Crypto, Data) | Java, Node.js/TypeScript, Python, Go, Rust</p>
+      </div>
+
+      <div class="contact">
+        <div>Lagos, Nigeria (Remote)</div>
+        <div>Email: <a href="mailto:sammymenim@gmail.com">sammymenim@gmail.com</a></div>
+        <div>Phone: 08144577391 (WhatsApp) | 08169353629</div>
+        <div>GitHub: <a href="https://github.com/menimJ" target="_blank" rel="noopener">github.com/menimJ</a></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Profile</h2>
+      <p class="summary">
+        Senior Back-End Engineer with 6+ years of experience building and running backend systems for fintech and crypto payments.
+        Strong in Java (Jersey) and Node.js (NestJS) and Python (Django), with hands-on delivery of payouts, buy and sell, cards,
+        BTC transfers, settlement, webhooks, and multi-country payment workflows. Comfortable owning services end-to-end from design
+        and implementation to production monitoring and iteration. Reliability-focused with observability using Prometheus,
+        OpenTelemetry, Sentry, and AWS CloudWatch, and event-driven workflows using AWS SQS. Also experienced building ELT pipelines,
+        lakehouse-style data systems, and Java-based connectors backed by MySQL.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Core Skills</h2>
+      <div class="grid">
+        <p class="kv"><span class="k">Languages:</span> <span class="v">Java, TypeScript, JavaScript, Python, Go, Rust</span></p>
+        <p class="kv"><span class="k">Backend Frameworks:</span> <span class="v">Jersey (Java), NestJS, Django, Express.js, Fiber (Go), Axum (Rust)</span></p>
+
+        <p class="kv"><span class="k">Architecture:</span> <span class="v">Microservices, event-driven systems, async workflows, distributed systems</span></p>
+        <p class="kv"><span class="k">API & Integrations:</span> <span class="v">REST APIs, webhooks, partner integrations</span></p>
+
+        <p class="kv"><span class="k">Cloud & Infra:</span> <span class="v">AWS (SQS, Lambda, EC2, S3, CloudWatch), Kubernetes, Docker</span></p>
+        <p class="kv"><span class="k">Deployment:</span> <span class="v">Docker and Kubernetes, plus VM-based deployments on AWS EC2 managed with scripts/systemd</span></p>
+
+        <p class="kv"><span class="k">Datastores:</span> <span class="v">PostgreSQL, Redis, MySQL, MongoDB</span></p>
+        <p class="kv"><span class="k">Observability:</span> <span class="v">Prometheus, OpenTelemetry, Sentry, CloudWatch</span></p>
+
+        <p class="kv"><span class="k">Testing:</span> <span class="v">Jest, Pytest, Postman, contract testing</span></p>
+        <p class="kv"><span class="k">Data Engineering:</span> <span class="v">ELT pipelines, lakehouse design, Java connector services (Jersey + MySQL)</span></p>
+
+        <p class="kv"><span class="k">Ways of Working:</span> <span class="v">Code reviews, mentoring, cross-functional collaboration, Agile/Scrum</span></p>
+        <p class="kv"><span class="k">Domains:</span> <span class="v">Payouts, cards, settlement, remittance, wallets, conversion and reconciliation</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <p class="role-title">Software Engineer (Enterprise and Consumer Payments) | Bitnob</p>
+          <p class="role-meta">Oct 2019 – Jan 10, 2026</p>
+        </div>
+        <p class="role-sub">Lagos, Nigeria (Remote)</p>
+
+        <ul>
+          <li>Built and maintained backend services powering enterprise APIs and consumer payment products across multiple regions.</li>
+          <li>Designed and deployed separate containerized services to isolate key domains, including payouts, buy and sell, cards, and other high-impact features, enabling independent scaling and safer deployments.</li>
+          <li>Implemented event-driven payout processing using AWS SQS for background execution, retries, and reliable financial workflows.</li>
+          <li>Built card-related integrations and backend services supporting card transaction workflows and operational stability.</li>
+          <li>Developed crypto payment features including Send BTC, transaction processing flows, and systems designed for correctness and traceability.</li>
+          <li>Built a dedicated webhook service to handle inbound and outbound event notifications with secure validation and reliable delivery for external partners.</li>
+          <li>Designed and delivered an LNAddress system to support Lightning-based identity and payment routing.</li>
+          <li>Built an auto-settlement system that settles to BTC wallet or USD wallet using rules-based routing and account handling.</li>
+          <li>Built direct settlement workflows that convert funds from BTC to local currencies and complete downstream payout processing.</li>
+          <li>Improved production visibility and incident response with metrics, tracing, and error monitoring using Prometheus, OpenTelemetry, Sentry, and AWS CloudWatch.</li>
+          <li>Deployed services using Docker and Kubernetes, and supported VM-based deployments on AWS EC2 managed with scripts/systemd where needed.</li>
+          <li>Owned technical support and production issue resolution for core payment systems for 4 years, partnering with operations and stakeholders to triage incidents, run root-cause analysis, and ship fixes.</li>
+          <li>Delivered ELT and lakehouse engineering work by building pipelines and Java (Jersey) connector services backed by MySQL to extract and load operational data for analytics and reporting.</li>
+        </ul>
+
+        <p class="subhead">Key Systems Delivered</p>
+        <ul>
+          <li><b>Payout Service:</b> Isolated, containerized payout processing with SQS-driven async jobs.</li>
+          <li><b>Buy and Sell Service:</b> Separate service for trade workflows and transaction state handling.</li>
+          <li><b>Cards Integration:</b> Card transaction integration flows and supporting backend services.</li>
+          <li><b>Webhook Handlers:</b> Reliable webhook ingestion and delivery for partner integrations.</li>
+          <li><b>LNAddress System:</b> Lightning address support for user payments and routing.</li>
+          <li><b>Settlement Platform:</b> Auto-settlement to BTC wallet or USD wallet, plus direct conversion from BTC to local currencies.</li>
+          <li><b>ELT + Lakehouse:</b> Pipelines and Java (Jersey) connectors from MySQL into lakehouse-style analytics storage.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <p class="role-title">Software Engineer (B2B Payments) | Brail (Contract)</p>
+          <p class="role-meta">Nov 2023 – Jun 2024</p>
+        </div>
+        <p class="role-sub">Remote</p>
+
+        <ul>
+          <li>Contributed to a multi-country B2B payment solution supporting Ghana, Nigeria, and Francophone Africa.</li>
+          <li>Built backend components for pricing and cost-of-sales logic supporting API monetization.</li>
+          <li>Developed cross-border payout and settlement automation aligned with compliance and business needs.</li>
+          <li>Improved API performance for high-volume traffic using caching and load-balancing patterns.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="role-head">
+        <p class="role-title">B.Eng. (Hons), Civil Engineering | University of Ilorin</p>
+        <p class="role-meta">2011 – 2016</p>
+      </div>
+      <p class="role-sub">Kwara State, Nigeria</p>
+    </section>
+
+    <section class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>KCNA (Kubernetes and Cloud Native Associate)</li>
+      </ul>
+    </section>
+
+    <section class="section links">
+      <h2>Links</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/menimJ" target="_blank" rel="noopener">https://github.com/menimJ</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
